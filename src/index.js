@@ -21,14 +21,14 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import todoApp from './redux/reducers'
 
 
 import App from './redux/index'
 
 
 
+import { createStore } from 'redux'
+import todoApp from './redux/reducers'
 let store = createStore(todoApp)
 
 render(
