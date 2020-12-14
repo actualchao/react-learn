@@ -17,7 +17,7 @@ const App = () => {
       <div>
         <ul>
           <li><Link to="/A">A</Link></li>
-          <li><Link to="/B">B</Link></li>
+          <li><Link to="/A/B">B</Link></li>
           <li><Link to="/C">C</Link></li>
         </ul>
 
@@ -25,13 +25,14 @@ const App = () => {
           <Route path="/A">
             <A />
           </Route>
-          <Route path="/B">
-            <B />
-          </Route>
+          <Route path="/C/B" component={B}></Route>
           <Route path="/C">
             <C />
           </Route>
         </Switch>
+      </div>
+      <div>
+
       </div>
     </Router>
   )
